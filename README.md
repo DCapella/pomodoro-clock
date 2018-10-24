@@ -15,5 +15,8 @@ A *React-Redux* app that allows you to set your study session timer.
 David Capella
 - [GitHub](https://github.com/DCapella)
 
-* License
+# License
 MIT License - see the [License.md](./LICENSE.md) file for details.
+
+# App
+[Heroku App](http://dcapella-pomodoro-clock.herokuapp.com)
