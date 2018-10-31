@@ -90,6 +90,7 @@ export class ClockDisplay extends React.Component {
   }
   countDown() {
     if (!this.state.play) return;
+    let is_chrome = (typeof window.chrome === "object" && navigator.appVersion.indexOf('Edge') === -1)
     let sound = document.getElementById("beep");
     if (this.state.onSession) {
       if (this.state.timerSession > 0) {
@@ -99,8 +100,10 @@ export class ClockDisplay extends React.Component {
           onSession: !this.state.onSession,
           timerSession: this.state.sessionLength * 60,
         });
-        sound.currentTime = 5;
-        sound.play();
+        if (is_chrome) {
+          sound.currentTime = 5;
+          sound.play();
+        }
       }
     } else if (!this.state.onSession) {
       if (this.state.timerBreak > 0) {
@@ -110,8 +113,10 @@ export class ClockDisplay extends React.Component {
           onSession: !this.state.onSession,
           timerBreak: this.state.breakLength * 60,
         });
-        sound.currentTime = 5;
-        sound.play();
+        if (is_chrome) {
+          sound.currentTime = 5;
+          sound.play();
+        }
       }
     }
   }
