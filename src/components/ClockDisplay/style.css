@@ -1,0 +1,86 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Oswald', sans-serif;
+  background: url(./background/tweed.png) repeat 0 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Spicy Rice', cursive;
+  color: lightgrey;
+}
+
+#timer {
+  background: url(./background/old_moon.png) repeat 0 0;
+  border-radius: 25px;
+  border: 2px solid black;
+  height: 200px;
+
+  flex-direction: column;
+}
+
+#break {
+  margin: 25px;
+}
+
+#session {
+  margin: 25px;
+}
+
+#break-length-row *, #session-length-row *, #footer {
+  margin: 5px;
+}
+
+#timer * {
+  margin: 5px;
+  font-size: 200%;
+}
+
+#time-left {
+  font-size: 400%;
+}
+
+#controls * {
+  margin: 25px;
+}
+
+#controls #pause {
+  margin-left: 0;
+}
+
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.LTG {
+  color: lightgrey;
+}
+
+@media (max-width: 500px) {
+  #break, #session {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 410px) {
+  #break-session {
+    flex-direction: column !important;
+  }
+
+  #controls * {
+    margin: 5px;
+  }
+}

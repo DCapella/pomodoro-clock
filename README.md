@@ -1,5 +1,5 @@
 # Pomodoro Clock
-A *React-Redux* app that allows you to set your study session timer.
+A *React* app that allows you to set your study session timer.
 
 # Getting Started
 `npm start`
@@ -9,7 +9,6 @@ A *React-Redux* app that allows you to set your study session timer.
 * CSS
 * JavaScript
 * React
-* Redux
 
 # Author
 David Capella
